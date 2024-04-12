@@ -1,0 +1,137 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="name">Survey! by raphael, chalk, axel</div>
+        <form onsubmit="submeet()">
+            <div class="detail">
+                <div class="boxes">
+                    <span class="details">Full Name :</span>
+                    <input type="text" id="Name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">Section :</span>
+                    <input type="text" id="Section" placeholder="Enter Your Section" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">Address :</span>
+                    <input type="text" id="Address" placeholder="Enter Your Address" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">Email :</span>
+                    <input type="text" id="Email" placeholder="Enter Your Email (Optional)">
+                </div>
+                
+
+
+<div class="container">
+            <div class="detail">
+                <div class="boxes">
+                    <span class="details">What is your occupation? :</span>
+                    <input type="text" id="q1" placeholder="Enter Your Answer" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">What is your favorite color?  :</span>
+                    <input type="text" id="q2" placeholder="Enter Your Answer" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">Your opinion on color pink? :</span>
+                    <input type="text" id="q3" placeholder="Enter Your Answer" required>
+                </div>
+                <div class="boxes">
+                    <span class="details">What do you prefer more father or mother? (Can be both) :</span>
+                    <input type="text" id="q4" placeholder="Enter Your Answer (Optional)">
+                </div>
+                <div class="boxes">
+                    <span class="details">What is your favorite shoe brand? :</span>
+                    <input type="text" id="q5" placeholder="Enter Your Answer (Optional)">
+                </div>
+                <div class="boxes">
+                    <span class="details">Feedback? :</span>
+                    <input type="text" id="q6" placeholder="Enter Your Answer (Optional)">
+                </div>
+             
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+                <div class="genderdetails">
+                    <span class="g-name">Gender</span>
+                    <div class="category">
+                        <label for="#">
+                            <input type="radio" name="male" > <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="#">
+                            <input type="radio" name="female" ><span class="dot one"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="#">
+                            <input type="radio" name="others" ><span class="dot one"></span>
+                            <span class="gender">Others</span>
+                        </label>
+                        <label for="#">
+                            <input type="radio" name="not to say" ><span class="dot one"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+
+
+   
+                    </div>
+                </div>
+            </div>
+
+            <Br><Br>
+                 
+                                                                          
+
+            <div class="button">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+   
+
+    <script>
+        function submeet() {
+            var name = document.getElementById('Name').value;
+            var section = document.getElementById('Section').value;
+            var address = document.getElementById('Address').value;
+            var email = document.getElementById('Email').value;
+            var q1 = document.getElementById('q1').value
+            var q2 = document.getElementById('q2').value
+            var q3 = document.getElementById('q3').value
+            var q4 = document.getElementById('q4').value
+            var q5 = document.getElementById('q5').value
+            var q6 = document.getElementById('q6').value
+            
+            localStorage.setItem("Name", name);
+            localStorage.setItem("section", section);
+            localStorage.setItem("address", address);
+            localStorage.setItem("Email", email);
+            localStorage.setItem("q1", occupation);
+            localStorage.setItem("q2", color);
+            localStorage.setItem("q3", opinion);
+            localStorage.setItem("q4", parent);
+            localStorage.setItem("q5", shoe);
+            localStorage.setItem("q6", feedback);
+
+            console.log(localStorage.getItem("Name"));
+            console.log(localStorage.getItem("section"));
+            console.log(localStorage.getItem("address"));
+            console.log(localStorage.getItem("Email"));
+            console.log(localStorage.getItem("q1"));
+            console.log(localStorage.getItem("q2"));
+            console.log(localStorage.getItem("q3"));
+            console.log(localStorage.getItem("q4"));
+            console.log(localStorage.getItem("q5"));
+            console.log(localStorage.getItem("q6"));
+        }
+    </script>
+</body>
+</html>

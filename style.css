@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff77f8;
+}
+
+body{
+    display: flex;
+    height: 100vh; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.B) 93%);
+}
+
+.container{
+    max-width:  700px;
+    width: 100%;
+    background: #ecd0e1 ;
+    padding: 25px 30px;
+    border-radius: 5px;
+
+}
+
+.container .name{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;   
+        font-family: "Protest Strike", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 38;
+        color: transparent;
+        -webkit-text-stroke: 1px #ff77f8;
+        background: url(back.png) #ff77f8;
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        
+    }
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.B) 93%);
+}
+
+.container form .detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .detail .boxes{
+    width: calc(100% / 2 - 20px);
+}
+
+.detail .boxes .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-style: bold;
+}
+.detail .boxes input{
+    height: 45px;
+    width: 100%;
+}
+
+form .genderdetails .g-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .genderdetails .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 110;
+    justify-content: space-between;
+}
+
+ label .genderdetails .category {
+    display: flex;
+    align-items: center;
+}
+
+.genderdetails .category .dot{
+    height: 40vh;
+    width: 18ps;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+form .button{
+    height: 45px;
+    width: 105px 0;
+}
+form .button input{
+    height: 40px;
+    width: 600px;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
